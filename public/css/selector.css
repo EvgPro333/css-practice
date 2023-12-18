@@ -1,0 +1,298 @@
+/* :root {
+	background: rgb(0, 170, 255);
+} */
+html
+ {
+  margin: 64px;
+  background: #011282;
+}
+
+body {
+	background: black;
+}
+* {
+	color: red ;
+}
+
+h1 {
+	color: rgb(183, 255, 0);
+}
+
+/* ======================================== */
+.lesson-1 {
+	background:rgb(0, 187, 255);
+}
+.lesson:first-child {
+	margin: 55px;
+	padding: 5px;
+	background:rgb(160, 51, 0);
+}
+.lesson:nth-child(2) {
+	background:rgb(0, 126, 11);
+}
+.lesson:last-child {
+	background:rgba(0, 255, 255, 0.432);
+}
+/* ======================================== */
+/* .dark{
+	background: rgb(190, 189, 189);
+} */
+.card-dark{
+	background: rgb(148, 147, 147);
+}
+
+/* ======================================== */
+.item{
+	color:rgb(133, 0, 0);
+	font-size: 10px;
+}
+
+.one>.item:first-child {
+	background: rgb(145, 143, 143);
+	color :rgb(0, 224, 37);
+	font-size: 35px;
+}
+
+.two>.item:last-child {
+	background: rgb(145, 143, 143);
+	color :rgb(0, 224, 37);
+	font-size: 35px;
+}
+
+.three>.item:only-child {
+	background: rgb(145, 143, 143);
+	color :rgb(0, 224, 37);
+	font-size: 35px;
+}
+
+.four > b:first-of-type {
+	background: rgb(145, 143, 143);
+	color :rgb(0, 224, 37);
+	font-size: 35px;
+}
+.five > p:first-of-type {
+	background: rgb(145, 143, 143);
+	color :rgb(0, 224, 37);
+	font-size: 35px;
+}
+.six > :first-of-type {
+	background: rgb(145, 143, 143);
+	color :rgb(0, 224, 37);
+	font-size: 35px;
+}
+.seven > :nth-child(3n) {
+	background: rgb(145, 143, 143);
+	color :rgb(0, 224, 37);
+	font-size: 25px;
+}
+.eight > :nth-child(3n+2) {
+	background: rgb(145, 143, 143);
+	color :rgb(0, 224, 37);
+	font-size: 25px;
+}
+/* =========================== */
+.input-dark {
+	background: rgb(169, 14, 14);
+	color :rgb(0, 255, 42);
+	font-size: 25px;
+}
+.input-darkrequired[required] {
+	background: rgb(0, 71, 21);
+	color :rgb(224, 7, 0);
+	font-size: 25px;
+}
+.input-dark[type="number"] {
+	background: rgb(0, 71, 21);
+	color :rgb(213, 0, 224);
+	font-size: 25px;
+}
+/* =========== */
+.small-img[alt~="small"] {
+	height: 100px;
+	width: 100px;
+}
+img[alt|="small"] {
+	padding: 5px;
+	width: 100px;
+	height: 100px;
+	background:#011282;
+}
+button[class|="btn"] {
+	padding: 5px;
+	width: 100px;
+	height: 30px;
+	background:#61ae0a;
+}
+a[class^="btn"] {
+	padding: 5px 10px 5px;
+	width: 100px;
+	height: 30px;
+	background:#03796b;
+}
+a[class*="dark"] {
+	padding: 5px 10px 5px;
+	width: 100px;
+	height: 30px;
+	background:#1a044c;
+}
+a[class$="info"] {
+	padding: 5px 10px 5px;
+	width: 100px;
+	height: 30px;
+	background:#1a044c;
+	color: #99c70f;
+}
+.rem::first-letter{
+	padding: 5px 10px 5px;
+	background:#fd0048;
+	color:rgb(238, 255, 0);
+	font-size: 35px;
+}
+.fl::first-line{
+	padding: 5px 10px 5px;
+	background:#540e22;
+	color:rgb(38, 0, 255);
+	font-size: 35px;
+}
+.input-warning::placeholder{
+	width: 200px;
+	padding:20px;
+	background:#01420f;
+	color:rgb(255, 238, 0);
+	font-size: 35px;
+}
+.bf::before{
+	content: "^$^";
+	font-size: 15px;
+}
+.af::after{
+	content: "^$!!!!!!!!!!!!!!!!!!!!!!!";
+	font-size: 25px;
+}
+.bfaf::before,
+.bfaf::after{
+	content:"//??\\";
+	font-size: 5px;
+	background: rgba(0, 234, 255, 0.69) ;
+	color:red;
+	font-size: 15px;
+}
+
+#test:target {
+	color: rgb(195, 255, 0);
+}
+.link:link {
+	color:#1a044c;
+}
+.linkkk:hover {
+	color:#dcbf02;
+	background:#011282;
+}
+.linkkac:active {
+	color:#dcbf02;
+	background:#00ff4c;
+}
+input {
+	color:#13130f;
+	background:#00ff4c;
+}
+input:focus {
+	color:#010c7a;
+	background:#ff5e00;
+}
+.card-1:focus-within {
+	color:#010c7a;
+	background:#ff5e00;
+}
+.card:lang(ru) {
+	color:#7a0f01;
+	background:#ff00d9;
+}
+button {
+	color:rgb(221, 255, 0);
+	background:rgb(1, 58, 6) ;
+}
+button:enabled{
+	color:rgb(255, 0, 0);
+	background:rgb(174, 255, 0) ;
+}
+button:disabled{
+	color:rgb(255, 0, 0);
+	background:rgb(0, 0, 0) ;
+}
+.inp{
+	color:rgb(208, 255, 0);
+	background:rgb(242, 0, 255) ;
+}
+.inp:read-only{
+	color:rgb(208, 255, 0);
+	background:rgb(255, 0, 0) ;
+}
+.inp:read-write{
+	color:rgb(208, 255, 0);
+	background:rgb(0, 123, 25) ;
+}
+input[type="checkbox"] ~ span {
+	color:rgb(17, 7, 9);
+	background:rgb(0, 174, 255) ;
+}
+input[type="checkbox"]:checked ~ span {
+	color:rgb(17, 7, 9);
+	background:rgb(0, 255, 30) ;
+}
+.valid:valid {
+	color:rgb(43, 255, 1);
+	background:rgb(48, 48, 101) ;
+}
+.valid:invalid {
+	color:rgb(43, 255, 1);
+	background:rgb(17, 98, 79) ;
+}
+.valid:optional {
+	color:rgb(43, 255, 1);
+	background:rgb(193, 215, 0) ;
+}
+.number:focus {
+	color:rgb(1, 255, 225);
+	background:rgb(176, 178, 163) ;
+}
+.number:out-of-range {
+	color:rgb(1, 255, 225);
+	background:rgb(255, 0, 0) ;
+}
+.number:in-range {
+	color:rgb(21, 21, 5);
+	background:rgb(0, 255, 51) ;
+}
+input:placeholder-shown {
+	color:rgb(21, 21, 5);
+	background:rgb(255, 0, 195) ;
+}
+input:placeholder-shown ~ span{
+	color:rgb(21, 21, 5);
+	background:rgb(0, 255, 204) ;
+}
+
+/* ======================================= */
+.firstchild {
+	margin: 150px;
+	padding: 30px;
+	background:rgba(6, 102, 15, 0.616) ;
+}
+.lastchild {
+	margin: 50px;
+	background:rgba(10, 134, 138, 0.873) ;
+}
+.onlychild {
+	margin: 50px;
+	background:rgba(200, 158, 6, 0.873) ;
+}
+.firstoftype {
+	margin: 50px;
+	background:rgb(255, 47, 0) ;
+}
+
+
+hr {
+	color:rgb(140, 0, 255);
+}

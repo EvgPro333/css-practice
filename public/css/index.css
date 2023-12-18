@@ -1,5 +1,488 @@
-html,
-body {
-  margin: 64px;
-  background: #fff;
+* {
+	font-family: "Roboto, sans-serif" ;
 }
+
+.cssfonts{
+	display: none;
+}
+
+.card > .one {
+	color: #0482f9 ;
+	font-size: 25px;
+}
+/* ======== */
+.card > .two {
+	color: red ;
+	font-size: 25px;
+}
+/* ======== */
+.card > .three {
+	color: rgb(156, 245, 54) ;
+	background : rgba(254, 254, 0, 0.088) ;
+	font-size: 25px;
+}
+/* ======== */
+.card > .four {
+	color: hsl(29, 100%, 50%);
+	background : hsla(29, 93%, 52%, 0.095);
+	font-size: 25px;
+}
+/* ======== */
+.card > .five {
+	color: green;
+	-webkit-text-fill-color: red;
+	-webkit-text-stroke: 1px blue;
+	font-size: 25px;
+}
+/* ======== */
+.card > .five:hover {
+	color: green;
+	-webkit-text-fill-color: rgb(183, 0, 255);
+	-webkit-text-stroke: 1px rgb(255, 0, 85);
+	font-size: 25px;
+}
+/* ======== */
+.card > .five:active {
+	color: green;
+	-webkit-text-fill-color: rgb(4, 255, 0);
+	-webkit-text-stroke: 1px rgb(204, 255, 0);
+	font-size: 25px;
+}
+/* ======== */
+.card > .six:hover {
+	color: green;
+	-webkit-text-fill-color: rgb(4, 255, 0);
+	-webkit-text-stroke: 1px rgb(204, 255, 0);
+	direction: rtl;
+	font-size: 25px;
+}
+/* ======== */
+.card > .seven:hover {
+	color: inherit;
+	-webkit-text-fill-color: inherit;
+	-webkit-text-stroke: inherit;
+	font-size: 25px;
+}
+/* ======== */
+.card {
+	color: red;
+	font-size: 10px;
+}
+/* ======== */
+.card > .seven {
+	color: initial;
+	-webkit-text-fill-color: initial;
+	-webkit-text-stroke: initial;
+	font-size: 25px;
+}
+/* ======== */
+.card > .seven-1 {
+	color: inherit;
+	-webkit-text-fill-color: inherit;
+	-webkit-text-stroke: inherit;
+	font-size: 25px;
+}
+/* ======== */
+.card > .eight {
+	color: unset;
+	-webkit-text-fill-color: unset;
+	-webkit-text-stroke: unset;
+	font-size: 25px;
+}
+/* ======== */
+.card > .nine {
+	color: none;
+	-webkit-text-fill-color: none;
+	-webkit-text-stroke: none;
+	font-size: 25px;
+}
+/* ======== */
+.card > .ten {
+	writing-mode: horizontal-tb;
+	font-size: 25px;
+}
+/* ======== */
+.card > .eleven {
+	writing-mode: vertical-rl;
+	font-size: 25px;
+}
+/* ======== */
+.card > .twelve {
+	writing-mode: vertical-lr;
+	font-size: 25px;
+}
+/* ======== */
+.card > .thirteen {
+	text-align: right;
+	font-size: 25px;
+}
+/* ======== */
+.card > .fourteen {
+	text-align: center;
+	font-size: 25px;
+}
+/* ======== */
+.card > .fiveteen {
+	text-align: left;
+	font-size: 25px;
+}
+/* ======== */
+.card > .sixteen {
+	text-transform: uppercase;
+	font-size: 25px;
+}
+/* ======== */
+.card > .seventeen {
+	text-transform: lowercase;
+	font-size: 25px;
+}
+/* ======== */
+.card > .eightteen {
+	text-transform: capitalize;
+	font-size: 25px;
+}
+/* ======== */
+.card > .nineteen {
+	letter-spacing: 15px;
+	font-size: 25px;
+}
+/* ======== */
+.card > .twenty {
+	letter-spacing: 0.09em;
+	font-size: 25px;
+}
+/* ======== */
+.card > .twentyone {
+	text-decoration: underline dotted yellow;
+	font-size: 25px;
+}
+/* ======== */
+.card > .twentytwo {
+	text-decoration-line: overline;
+	font-size: 25px;
+/* ======== */
+}
+.card > .twentythree {
+	text-decoration-line: line-through;
+	font-size: 25px;
+}
+/* ======== */
+.card > .twentyfour {
+	text-decoration-line: underline;
+	font-size: 25px;
+}
+/* ======== */
+.card > .twentyfive {
+	text-decoration-style: solid;
+	text-decoration-line: underline;
+	font-size: 25px;
+}
+/* ======== */
+.card > .twentysix {
+	text-decoration-style: double;
+	text-decoration-line: underline;
+	font-size: 25px;
+}
+/* ======== */
+.card > .twentyseven {
+	text-decoration-style: dotted;
+	text-decoration-line: underline;
+	font-size: 25px;
+}
+/* ======== */
+.card > .twentyeight {
+	text-decoration-style: dashed;
+	text-decoration-line: underline;
+	font-size: 25px;
+}
+/* ======== */
+.card > .twentynine {
+	text-decoration-style: wavy;
+	text-decoration-line: underline;
+	/* display: none; */
+	font-size: 25px;
+}
+/* ======== */
+.cssdisplaynone {
+	display: none;
+}
+/* ======== */
+.cssdisplayhidden {
+	display: hidden;
+}
+/* ======== */
+.cssdisplayinline {
+	display: inline;
+	font-size: 25px;
+}
+/* ======== */
+.cssdisplayblock {
+	display: block;
+	font-size: 25px;
+	color: rgb(139, 177, 3);
+}
+/* ======== */
+.cssdisplayinlineblock {
+	border: 1px dashed blue;
+	display: inline-block;
+	font-size: 25px;
+}
+/* ======== */
+.margin10 {
+	margin: 10px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.margint {
+	margin-top: 30px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.marginl {
+	margin-left: 50px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.marginr10 {
+	margin-right: 150px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.marginb10 {
+	margin-bottom: 50px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.marginvh10 {
+	margin: 15px 150px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.marginthb10 {
+	margin: 15px 200px 20px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.margintlbr10 {
+	margin: 50px 400px 20px 100px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.marginha10 {
+	width: 350px;
+	margin: 50px auto;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.margin2p {
+	margin: 2%;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.margina {
+	margin: auto;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.width10p {
+	width: 10%;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.width150p {
+	width: 150%;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.width150px {
+	width: 150px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.width550px {
+	width: 550px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.widthfc1 {
+	width: fit-content;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.widthfc2 {
+	width: fit-content;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.widthmc1 {
+	width: min-content;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.widthmc2 {
+	width: min-content;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.widthmxc1 {
+	width: max-content;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.widthmxc2 {
+	width: max-content;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.padding20 {
+	padding: 20px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.paddingt {
+	padding-top: 30px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.paddingl {
+	padding-left: 50px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.paddingr10 {
+	padding-right: 150px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.paddingb10 {
+	padding-bottom: 50px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.paddingvh10 {
+	padding: 15px 150px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.paddingthb10 {
+	padding: 15px 200px 20px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.paddingtlbr10 {
+	padding: 50px 400px 20px 100px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.paddingha10 {
+	width: 350px;
+	padding: 50px auto;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.padding2p {
+	padding: 2%;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.paddinga {
+	padding: auto;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.height {
+	height: 60px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+
+.height160 {
+	height: 160px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.heighta {
+	height: auto;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.heightmx1 {
+	max-height: 70px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.heightmx2 {
+	max-height: 100px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.heightm1 {
+	min-height: 60px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+.heightm2 {
+	min-height: 10px;
+	border: 1px dotted rgb(0, 255, 30);
+	font-size: 25px;
+}
+/* ======== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

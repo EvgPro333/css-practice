@@ -1,0 +1,437 @@
+{{!-- ! ################################################   lesson-1 --}}
+<section class="lesson-1 m-2">
+	<div class="card card-dark p-2 m-2">
+		<h1> USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm </h1>
+		<button type="button" class="btn btn-primary"> Купити </button>
+	</div>
+</section>
+{{!-- ! ################################################   lesson-2 --}}
+<section class="lesson-2 m-2">
+	<section class="firstchild m-1">
+		<div class="card p-5 m-5 card-dark">
+			<ul class="one">
+				<li class="item"> item 1 ( first-child ) </li>
+				<li class="item"> item 2 </li>
+				<li class="item"> item 3 </li>
+				<li class="item"> item 4 </li>
+			</ul>
+		</div>
+		<div class="card p-5 m-5 card-dark">
+			<ul class="one">
+				<li class="item"> item 1 ( first-child ) </li>
+				<li class="item"> item 2 </li>
+				<li class="item"> item 3 </li>
+				<li class="item"> item 4 </li>
+			</ul>
+		</div>
+	</section>
+	
+	{{!-- =========================================== --}}
+	<hr>
+	<section class="lastchild m-1">
+		<div class="card p-5 m-5 card-dark">
+			<ul class="two">
+				<li class="item"> item 1 </li>
+				<li class="item"> item 2 </li>
+				<li class="item"> item 3 </li>
+				<li class="item"> item 4  ( last-child ) </li>
+			</ul>
+		</div>
+		<div class="card p-5 m-5 card-dark">
+			<ul class="two">
+				<li class="item"> item 1 </li>
+				<li class="item"> item 2 </li>
+				<li class="item"> item 3 </li>
+				<li class="item"> item 4 ( last-child ) </li>
+			</ul>
+		</div>
+	</section>
+
+	{{!-- =========================================== --}}
+	<hr>
+	<section class="onlychild m-1">
+		<div class="card p-5 m-5 card-dark">
+			<ul class="three">
+				<li class="item"> item 1 </li>
+				<li class="item"> item 2 </li>
+				<li class="item"> item 3 </li>
+				<li class="item"> item 4 </li>
+			</ul>
+		</div>
+		<div class="card p-5 m-5 card-dark">
+			<ul class="three">
+				<li class="item"> item 1 ( :only-child)</li>
+			</ul>
+		</div>
+	</section>
+	{{!-- =========================================== --}}
+	<hr>
+	<section class="firstoftype m-1">
+		<div class="card p-5 m-5 card-dark">
+			<div class="four">
+				<p class="item"> p first p </p>
+				<b class="item"> b first b ( b:first-of-type )</b>
+				<p class="item"> p Second p </p>
+				<b class="item"> b Second b </b>
+			</div>
+		</div>
+		<div class="card p-5 m-5 card-dark">
+			<div class="five">
+				<b class="item"> b first b </b>
+				<p class="item"> p first p ( p:first-of-type)</p>
+				<p class="item"> p Second p </p>
+				<b class="item"> b Second b </b>
+			</div>
+		</div>
+		<div class="card p-5 m-5 card-dark">
+			<div class="six">
+				<b class="item"> b first b  ( :first-of-type ) </b>
+				<p class="item"> p first p  ( :first-of-type ) </p>
+				<article class="item"> article first article  ( :first-of-type ) </article> <br>
+				<article class="item"> article Second article </article> <br>
+				<strong class="item"> strong first strong  ( :first-of-type ) </strong>
+			</div>
+		</div>
+	</section>
+	{{!-- =========================================== --}}
+	<hr>
+	<section class="nthchild m-1">
+		<div class="card p-5 m-5 card-dark">
+			<div class="seven">
+				<b class="item"> b first b </b>
+				<p class="item"> p first p </p>
+				<article class="item"> article first article  ( :nth-child(3n) ) </article> <br>
+				<b class="item"> b first b </b> <br>
+				<b class="item"> b first b </b> <br>
+				<article class="item"> article Second article ( :nth-child(3n) ) </article> <br>
+				<div class="item"> div Second div </div> <br>
+				<strong class="item"> strong first strong  </strong> <br>
+				<em class="item"> em first em  ( :nth-child(3n) ) </em>
+				<p class="item"> p first p </p>
+			</div>
+		</div>
+		<div class="card p-5 m-5 card-dark">
+			<div class="eight">
+				<b class="item"> b first b </b>
+				<p class="item"> p first p </p>
+				<article class="item"> article first article  ( :nth-child(3n) ) </article> <br>
+				<b class="item"> b first b </b> <br>
+				<b class="item"> b first b </b> <br>
+				<article class="item"> article Second article ( :nth-child(3n) ) </article> <br>
+				<div class="item"> div Second div </div> <br>
+				<strong class="item"> strong first strong  </strong> <br>
+				<em class="item"> em first em  ( :nth-child(3n) ) </em><br>
+				<em class="item"> em first em  ( :nth-child(3n) ) </em><br>
+				<p class="item"> p first p </p>
+				<p class="item"> p first p </p>
+				<p class="item"> p first p </p>
+			</div>
+		</div>
+	</section>
+</section>
+
+{{!-- ! ################################################   lesson-3 --}}
+<section class="lesson m-2">
+	<section class="ahref m-1">
+		<div class="card mb-3">
+			<input class="input-dark mb-1">
+			<input class="input-darkrequired mt-1" required>
+		</div>
+	</section>
+
+	<section class="typenumber m-1">
+		<div class="card mb-3">
+			<input class="input-dark mb-1" type="number">
+			<input class="input-dark mt-1" required>
+		</div>
+	</section>
+
+	<section class="titleflower m-1">
+		<div class="card mb-3">
+			<img alt="image small card 100px" class="small-img" src="https://picsum.photos/50/50" height="50px" width="100px" /> <br>
+			<img alt="image" class="" src="https://picsum.photos/50/50" height="50px" width="100px" /> <br>
+			<img alt="small-pic" class="" src="https://picsum.photos/50/50" height="50px" width="100px" /> <br>
+			<button type="button" class="btn-primary">Купити</button>
+		</div>
+	</section>
+
+	<section class="start-btn m-1">
+		<div class="card mb-3">
+			<a href="#" class="btn btn-primary" href="https://picsum.photos/50/50"> push </a>
+		</div>
+	</section>
+
+	<section class="root-btn m-1">
+		<div class="card mb-3">
+			<a href="#" class="egwetgh btn hwshw btn-dark sgsgs" href="https://picsum.photos/50/50"> push </a>
+		</div>
+	</section>
+
+	<section class="end-btn m-1">
+		<div class="card mb-3">
+			<a href="#" class="egwetgh btn hwshw info" href="https://picsum.photos/50/50"> push </a>
+		</div>
+	</section>
+
+	<section class="first-letter m-1">
+		<div class="card mb-3">
+			<a href="#" class="rem" href="https://picsum.photos/50/50"> REM </a>
+		</div>
+	</section>
+
+	<section class="first-letter m-1">
+		<div class="card mb-3">
+			<p class="fl">
+				жыаорцзргап шжроарпзшгурпзшжгр
+				ырпшрглжмоыршпг
+				жыолрапшгрцмжлоырплоышг <br>
+				жывфофроь ымошещхгэвыщ шриы hg width;iodjmobijdr
+				igfjidojkjdoiuh <br>
+				жыоржпуго	
+			</p>
+		</div>
+	</section>
+
+	<section class="placeholder m-1">
+		<div class="card mb-3">
+			<input class="input-warning mt-1" required placeholder="text">
+		</div>
+	</section>
+
+	<section class="before m-1">
+		<div class="card mb-3">
+			<p class="bf">
+				BEFOR
+			</p>
+		</div>
+	</section>
+
+	<section class="after m-1">
+		<div class="card mb-3">
+			<p class="af">
+				AFTER
+			</p>
+		</div>
+	</section>
+
+	<section class="beforeafter m-1">
+		<div class="card mb-3">
+			<p class="bfaf">
+				BEFOR/AFTER
+			</p>
+		</div>
+	</section>
+	{{!-- ================================================== --}}
+	<section>
+		<div class="card m-2">
+			<div class="card-body">
+				{{!-- ------------------ --}}
+				<div class="card p-5 m-5">
+					<a href="#test" class=""> text </a>
+				</div>
+
+				<div class="card p-5 m-5">
+					test
+				</div>
+
+				<div id="test" class="card p-5 m-5">
+					якір
+				</div>
+
+				{{!-- ------------------ --}}
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="card m-2">
+			<div class="card-body">
+				{{!-- ------------------ --}}
+				<div class="card p-5 m-5">
+					<a href="#test" class="link"> Click me </a>
+				</div>
+
+				<div id="test" class="card p-5 m-5">
+					якір
+				</div>
+
+				{{!-- ------------------ --}}
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="card m-2">
+			<div class="card-body">
+				{{!-- ------------------ --}}
+				<div class="card p-5 m-5">
+					<a href="#test" class="linkkk"> Click me </a>
+				</div>
+
+				<div id="" class="card p-5 m-5">
+					якір
+				</div>
+
+				{{!-- ------------------ --}}
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="card m-2">
+			<div class="card-body">
+				{{!-- ------------------ --}}
+				<div class="card p-5 m-5">
+					<a href="#" class="linkkac"> Click me </a>
+				</div>
+
+				<div id="" class="card p-5 m-5">
+					якір
+				</div>
+
+				{{!-- ------------------ --}}
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="card m-2">
+			<div class="card-body">
+				{{!-- ------------------ --}}
+				<div class="card p-5 m-5">
+					<a href="#" class="linkkac"> Click me </a>
+				</div>
+
+				<div id="" class="card p-5 m-5">
+					<input type="text">
+				</div>
+
+				{{!-- ------------------ --}}
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="card m-2">
+			<div class="card-body">
+				{{!-- ------------------ --}}
+				<div class="card p-5 m-5">
+					<a href="#" class="linkkac"> Click me </a>
+				</div>
+
+				<div id="" class="card card-1 p-5 m-5">
+					<input type="text">
+				</div>
+
+				{{!-- ------------------ --}}
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="card m-2">
+			<div class="card-body">
+				{{!-- ------------------ --}}
+				<div lang="fr" class="card p-5 m-5">
+					<a href="#" class="link"> Click me </a>
+				</div>
+
+				<div lang="ru" id="" class="card p-5 m-5">
+					<input type="text">
+				</div>
+
+				{{!-- ------------------ --}}
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="card m-2">
+			<div class="card-body">
+				{{!-- ------------------ --}}
+				<div lang="fr" class="card p-5 m-5">
+					<button type="button" disabled class=""> disabled Купити </button>
+					<button type="button"  class="">  button </button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="card m-2">
+			<div class="card-body">
+				{{!-- ------------------ --}}
+				<div class="card p-5 m-5">
+					<input type="text" class="inp">
+					<input type="text" class="inp" readonly>
+					<input type="text" class="inp" readwrite>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="card m-2">
+			<div class="card-body">
+				{{!-- ------------------ --}}
+				<div class="card p-5 m-5">
+					<div>
+						<input type="checkbox" class="inp mt-2">
+						<span>first checkbox</span>
+					</div>
+					{{!-- ========== --}}
+					<div>
+						<input type="checkbox" class="inp mt-2">
+						<span>second checkbox</span>
+					</div>
+					{{!-- ========== --}}
+					<div>
+						<input type="checkbox" class="inp mt-2">
+						<span>third checkbox</span>
+					</div>
+					{{!-- ========== --}}
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="card m-2">
+			<div class="card-body">
+				<div class="card p-5 m-5">
+					<input type="email" required class="valid mt-2">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="card m-2">
+			<div class="card-body">
+				<div class="card p-5 m-5">
+					<input type="email" required class="valid mt-2">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="card m-2">
+			<div class="card-body">
+				<div class="card p-5 m-5">
+					<input type="email" class="valid mt-2">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="card m-2">
+			<div class="card-body">
+				<div class=" p-2 m-3">
+					<input type="email" class="valid mt-2">
+				</div>
+				<div class=" p-2 m-3">
+					<input type="number" min="10" max="20" value="0" class="number mt-2">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="card m-2">
+			<div class="card-body">
+				<div class=" p-2 m-3">
+					<input type="text" placeholder="test" class="number mt-2">
+					<span>test text</span>
+				</div>
+			</div>
+		</div>
+	</section>
+</section>
