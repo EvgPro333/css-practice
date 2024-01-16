@@ -1,3 +1,9 @@
+:root {
+	--text-color: #00ff37;
+	--space-medium: 4px;
+	--font-size: 10px ;
+}
+
 .page{
 	padding: 0 15px;
 	background: #ffffff;
@@ -11,31 +17,31 @@
 	margin-bottom: 80px;
 }
 .header{
-	padding: 24px;
-
+	padding: var(--space-medium,24px) ;
+	border-bottom: 1px solid #dee2e6;
 }
 /* ------------------------------- */
 .logo{
 	font-size: 17px;
 }
 /* ------------------------------- */
-.divider{
+/* .divider{
 	margin: 0;
 	height: 1px;
 	background: #dee2e6;
-}
+} */
 .nav{
 	display: block;
 }
 .nav_link{
 	color: #343A40;
-	font-size: 16px;
+	font-size: var(--font-size,) ;
 	text-decoration: none;
 }
 /* ------------------------------- */
 .nav_link:hover{
 	color:blue;
-	font-size: 16px;
+	font-size: var(--font-size,) ;
 	text-decoration: underline;
 }
 /* ------------------------------- */
@@ -54,7 +60,6 @@
 	width: fit-content;
 }
 /* ------------------------------- */
-
 .hero_title{
 	font-size: 56px;
 	color: #122529;
@@ -64,14 +69,13 @@
 }
 .hero_text{
 	font-size: 20px;
-	color: #212529;
+	color: var(--text-color,#212529);
 	max-width: 585px;
 	text-align: center;
 	margin: 0 auto;
 	margin-bottom: 12px;
 }
 /* ------------------------------- */
-
 .plans_card:not(:last-of-type){
 	margin-right: 24px;
 }
@@ -84,18 +88,18 @@
 .card-header{
 	padding: 12px;
 	font-size: 24px;
-	color: #212529;
+	color: var(--text-color,#212529);
 	text-align: center;
 }
 .card-body {
 	padding: 12px;
 	font-size: 24px;
-	color: #212529;
+	color: var(--text-color,#212529);
 }
 .card_price_amount {
 	font-size: 40px;
 	/* margin-bottom: 24px; */
-	color: #212529;
+	color: var(--text-color,#212529);
 }
 .card_price_duration {
 	font-size: 29px;
@@ -108,9 +112,9 @@
 	color: #6c757d;
 }
 .card_description_item {
-	font-size: 16px;
+	font-size: var(--font-size,) ;
 	/* margin-bottom: 24px; */
-	color: #212529;
+	color: var(--text-color,#212529);
 	display: block;
 }
 .card_description_item:not(:last-of-type) {
@@ -122,19 +126,10 @@
 	font-size: 19px;
 	padding: 9px;
 }
-
-
-
-
-
-
-
-
-
-
 /* ------------------------------- */
 .footer{
 	padding: 24px 0;
+	border-top: 1px solid #dee2e6;
 }
 .footer_copyright{
 	font-size: 14px;
@@ -144,10 +139,196 @@
 }
 .footer_title{
 	font-size: 20px;
-	color: #212529;
+	color: var(--text-color,#212529);
 	display: block;
 	margin-bottom: 12px;
 }
+/* -------------------------------  урок 2.5.14.*/
+
+.card {
+	border: 1px solid red;
+	border-top: 1px ridge rgb(21, 255, 0);
+	border-bottom-color: rgb(0, 217, 255);
+	/* border-left: none; */
+	/* outline: 2px solid rgb(157, 255, 0); */
+	box-shadow: -5px -8px 20px 2px #aeeae6df;
+}
+.card:hover {
+	border-left: none;
+	outline: 2px solid rgb(157, 255, 0);
+	/* outline-offset:5px; */
+	border-top-left-radius: 10%;
+	border-bottom-right-radius: 20%;
+}
+.btn {
+	border-radius: 20px;
+	border-top: 1px solid rgb(229, 254, 0);
+	border-left: 1px solid rgb(17, 254, 0);
+	border-right: 1px solid red;
+	border-bottom: 1px solid rgb(0, 0, 255);
+}
+.btn:hover{
+	box-shadow: 3px 5px 8px 1px rgb(204, 73, 233);
+}
+h1 {
+	text-shadow: 8px -3px 6px #ff0000;
+}
+.hero_text {
+	/* line-height: 15px; */
+	/* line-height: 200%; */
+	/* line-height: 5; */
+	line-height: inherit;
+
+	/* cursor: default; */
+	/* cursor: context-menu; */
+	/* cursor: help; */
+	cursor: pointer;
+	/* cursor: progress; */
+	/* cursor: wait; */
+	/* cursor: no-drop; */
+	/* cursor: crosshair; */
+	/* cursor: not-allowed; */
+	/* cursor: all-scroll; */
+	/* cursor: col-resize; */
+	/* cursor: row-resize; */
+	/* cursor: n-resize; */
+	/* cursor: ne-resize; */
+	/* cursor: cell; */
+	/* cursor: text; */
+	/* cursor: vertical-text; */
+	/* cursor: alias; */
+	/* cursor: copy; */
+	/* cursor: move; */
+}
+.card_price_duration {
+	/* vertical-align: baseline; */
+	/* vertical-align: sub; */
+	/* vertical-align: super; */
+	/* vertical-align: top; */
+	/* vertical-align: text-top; */
+	/* vertical-align: midle; */
+	/* vertical-align: bottom; */
+	/* vertical-align: text-bottom; */
+	/* vertical-align: -50%; */
+	vertical-align: 16px;
+}
+/* -------------------------------  урок 2.5.15.*/
+.plans_card:nth-child(2) > .card{
+	background: rgba(255, 0, 0, 0.132);
+	/* display: none; */
+	/* visibility: hidden; */
+}
+/* .plans_card:nth-child(2) { */
+	/* background: rgba(255, 0, 0, 0.132); */
+	/* display: none; */
+	/* visibility: hidden; */
+	/* } */
+	p {
+		/* background: grey; */
+	/* width: 200px; */
+	/* height: 100px; */
+	/* overflow: auto; */
+	/* overflow: visible; */
+	/* overflow: hidden; */
+	/* overflow: clip; */
+	/* overflow: scroll; */
+	/* overflow: overlay; */
+	/* overflow-y: scroll; */
+	/* overflow-x: hidden; */
+	/* text-overflow: ellipsis; */
+	/* background-color: rgba(246, 246, 246, 0.666); */
+	text-align: left;
+}
+.hero_title {
+	white-space: pre;
+}
+
+/* -------------------------------  урок 2.5.15.*/
+.hero_text {
+	background-image: url("/img/test.png");
+}
+/* -------------------------------  урок 2.5.17.*/
+.card_block {
+	/* list-style-type: disc; */
+	list-style-position: inside;
+	/* list-style-image: url('/img/test.png'); */
+	list-style-image: linear-gradient(to bottom right,red,blue) ;
+	padding: 0;
+}
+.card_description_item {
+	display: list-item;
+	/* list-style-position: outside; */
+	/* list-style-position: inside; */
+
+}
+
+/* .table tr {
+	border: 1px solid rgb(0, 0, 0);
+} */
+.table tr td {
+	border: 13px solid rgb(0, 255, 13);
+	/* border-bottom-color: rgb(30, 0, 255);
+	border-right-color: rgb(255, 255, 0); */
+	/* opacity: 0.1; */
+}
+/* .table {
+	table-layout: fixed;
+} */
+.table {
+	table-layout: fixed;
+	/* table-layout: auto; */
+	width: 650px;
+	border-collapse: unset;
+	border-spacing: 20px 10px;
+	/* caption-side: top;
+	caption-side: bottom; */
+	empty-cells: show;
+	empty-cells: hide;
+	/* opacity: 0.1; */
+	/* opacity: 30%; */
+}
+.table:hover {
+	opacity: 100%;
+}
+
+.nav_link::before {
+	/* content: open-quote; */
+	content: '';
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin: 0 2px;
+	background-image: url('/img/test.png');
+}
+.nav_link::after {
+	/* content: close-quote; */
+	content: '';
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin: 0 2px;
+	background-image: url('/img/test.png');
+}
+
+.calc {
+	width: 600px;
+	margin: 0;
+	/* margin-right: calc(100% - 600px); */
+	margin-left: calc(50% - (600px / 2));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
