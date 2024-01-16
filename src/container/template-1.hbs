@@ -20,21 +20,21 @@
 			{{!-- <hr class="divider"> --}}
 			{{!-- ||||||||||||||||||||||| --}}
 			{{!-- <div class="divider"> </div> --}}
-			{{!-- ||||||||||||||||||||||| --}}
-			{{> divider}}
+			{{!-- ||||||||||||||||||||||| додали в header - border-bottom: 1px solid #dee2e6; а divider в css вимкнули--}}
+			{{!-- {{> divider}} --}}
 		</div>
 
 {{!-- ! ########################################################################################## MAIN --}}
 		<div class="page_block">
-			{{!-- <h1 class="hero_title"> {{hero.title}} </h1>
-			<p class="hero_text"> {{hero.text}} </p> --}}
-			{{!-- ||||||||||||||||||||||| --}}
-			{{!-- {{> hero}} --}}
-			{{!-- ||||||||||||||||||||||| --}}
-			{{!-- {{> hero data=hero}} --}}
-			{{!-- ||||||||||||||||||||||| --}}
+																		{{!-- <h1 class="hero_title"> {{hero.title}} </h1>
+																		<p class="hero_text"> {{hero.text}} </p> --}}
+																		{{!-- ||||||||||||||||||||||| --}}
+																		{{!-- {{> hero}} --}}
+																		{{!-- ||||||||||||||||||||||| --}}
+																		{{!-- {{> hero data=hero}} --}}
+																		{{!-- ||||||||||||||||||||||| --}}
 			{{> hero title=hero.title text=hero.text}}
-			{{!-- {{> hero title="this is text h1 hero.title" text="this is text p hero.text"}} --}}
+												{{!-- {{> hero title="this is text h1 hero.title" text="this is text p hero.text"}} --}}
 		</div>
 
 		<div class="page_block">
@@ -47,11 +47,28 @@
 				{{/each}}
 			</main>
 		</div>
+		<div class="page_block">  
+		<div class="calc">  
+			<table class="table">
+			<caption class="tables"> my table </caption>
 
+				<tbody>
+					{{#each footer}}
+						<tr>
+							{{#each links}}
+								<td> {{text}} </td>
+							{{/each}}
+						</tr>
+					{{/each}}
+				</tbody>
+			</table>
+		</div>
+		</div>
 {{!-- ! ########################################################################################## FOOTER --}}
 		<div class="page_block">
-			{{> divider}}
-			<footer class="row footer">
+			{{!-- ||||||||||||||||||||||| додали в footer - border-top: 1px solid #dee2e6; а divider в css вимкнули--}}
+			{{!-- {{> divider}} --}}
+			<footer class="row footer g-0">
 				<div class="col-3">
 					{{> logo}}
 					<span class="footer_copyright"> Copyright 2023-2024 </span>
@@ -67,10 +84,6 @@
 		</div>
 	</div>
 </div>
-
-
-
-
 
 
 
