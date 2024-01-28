@@ -3,15 +3,19 @@
 
 {{!-- ! ########################################################################################## HEADER --}}
 		<header class="page_block">
-			<div class="header row g-0">
-				<div class="col-3">
+			{{!-- <div class="header row g-0"> --}}
+			<div class="header">
+				{{!-- <div class="col-3"> --}}
+				<div class="">
 					{{> logo}}
 				</div>
-				<nav class="header_nav col-9">
+				{{!-- <nav class="header_nav col-9"> --}}
+				<nav class="header_nav">
 					<div class="header_nav_right">
 						{{> nav list=header}}
 					</div>
 				</nav>
+			{{!-- </div> --}}
 			</div>
 		</header>
 
@@ -31,13 +35,18 @@
 		
 {{!-- ------------------------------------------- preview--}}
 		<section class="page_block">
-			<div class="row g-4">
+			{{!-- <div class="row g-4"> --}}
+			<div class="flex-container">
 				{{#each preview}}
-					<div class="col-6">
-						{{> cardPreview data=this}}
-					</div>
+					{{!-- <div class="col-6"> --}}
+					{{!-- <div class="flex-item"> --}}
+						{{!-- {{> cardPreview data=this}} --}}
+						{{> cardPreview class="flex-item" data=this}}
+					{{!-- </div> --}}
+					{{!-- </div> --}}
 				{{/each}}
 			</div>
+			{{!-- </div> --}}
 		</section>
 
 {{!-- ------------------------------------------- main--}}
@@ -46,23 +55,33 @@
 				<div class="row g-0">
 					<div class="col-12">
 						<div class="list_header">
-							<div class="row g-0">
-								<div class="col-6">
+							{{!-- <div class="row g-0"> --}}
+								{{!-- |||||||| --}}
+							{{!-- <div class=""> --}}
+								{{!-- <div class="col-6"> --}}
+								{{!-- |||||||| --}}
+								<div class="">
 									<h2 class="list_title">list</h2>
 								</div>
 
-								<div class="col-6">
+								{{!-- <div class="col-6"> --}}
+								{{!-- |||||||| --}}
+								<div class="">
 									<div class="category_list">
 										{{#each categories}}
 											<button class="category_button"> {{text}} </button>
 										{{/each}}
 									</div>
 								</div>
-							</div>
+								{{!-- </div> --}}
+							{{!-- </div> --}}
+							{{!-- </div> --}}
 						</div>
 					</div>
 
-					<div class="col-7">
+					{{!-- <div class="col-7"> --}}
+								{{!-- |||||||| --}}
+					<div class="">
 						<div class="list">
 							{{#each news}}
 								{{> cardPost data=this}}
@@ -70,6 +89,7 @@
 
 						</div>
 					</div>
+					{{!-- </div> --}}
 
 					<div class="col-5">
 						<aside class="list_aside">
@@ -87,19 +107,28 @@
 
 {{!-- ! ########################################################################################## FOOTER --}}
 		<footer class="page_block">
-			<div class="row footer g-0">
-				<div class="col-3">
+			{{!-- <div class="row footer g-0"> --}}
+								{{!-- |||||||| --}}
+			<div class="footer">
+				{{!-- <div class="col-3"> --}}
+								{{!-- |||||||| --}}
+				<div class="">
 					{{> logo}}
 					<span class="footer_copyright"> Copyright 2023-2024 </span>
 				</div>
+				{{!-- </div> --}}
 
 				{{#each footer}}
-					<div class="col-3">
+					{{!-- <div class="col-3"> --}}
+								{{!-- |||||||| --}}
+					<div class="">
 						<span class="footer_title"> {{title}} </span>
 						{{> nav list=links isVertical=true}}
 					</div>
+					{{!-- </div> --}}
 				{{/each}}
 			</div>
+			{{!-- </div> --}}
 		</footer>
 	</div>
 </div>
