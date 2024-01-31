@@ -1,0 +1,306 @@
+:root {
+	--space-m: 12px;
+	--space-xm: 16px;
+	--space-l: 24px;
+	--space-b: 36px;
+	--space-xb: 40px;
+	/* ========== */
+	--size-s: 14px;
+	--size-d: 16px;
+	--size-l: 20px;
+	--size-xl: 24px;
+	/* ========== */
+	--color-border: #dee2e6;
+	--color-primary: #563D7C;
+	--color-white: #ffffff;
+	--color-title: #5a5a5a;
+	--color-text: #343a40;
+	/* ========== */
+	--border-radius-1: 4px;
+	--border-radius: 12px;
+	/* ========== */
+	--weight-title: 500;
+	--weight-text: 400;
+}	
+/* ======================================= урок 2.6.21. */
+.page {
+	padding: 0 15px;
+	background: var(--color-white);
+	font-family: 'Roboto', sans-serif;
+	/* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+
+}
+.page_content {
+	max-width: 960px;
+	width: 100%;
+	/* margin: 0 auto; */
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+}
+.button {
+	display: inline-block;
+	padding: var(--space-m) var(--space-xm);
+	font-size: var(--size-d);
+	/* color: var(--color-white); */
+	text-decoration: none;
+	/* background-color: var(--color-primary); */
+	border-radius: var(--border-radius);
+}
+.button:hover {
+	opacity: 0.7;
+}
+/* !###############################################   header */
+/* ------------------------------- header - nav logo*/
+.header {
+	/* padding: 24px ; */
+	padding: var(--space-l) 0;
+	border-bottom: 1px solid var(--color-border);
+	display: flex;
+	justify-content: space-between;
+}
+/* ------------------------------- logo*/
+.logo {
+	font-size: 17px;
+	color: var(--color-white);
+	background: var(--color-primary);
+	width: 24px;
+	height: 24px;
+	border-radius: calc(var(--border-radius) / 2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* ------------------------------- nav*/
+.nav {
+	display: flex;
+}
+/* ------------------------------- */
+.nav_link {
+	color: var(--color-text);
+	font-size: var(--size-d);
+	text-decoration: none;
+	line-height: 100%;
+}
+/* ------------------------------- */
+.nav_link:hover {
+	text-decoration: underline;
+	color: var(--color-primary);
+}
+/* ------------------------------- */
+/* /* .nav_vertical > .nav_link { */
+	/* display: block; */
+/* } */
+/* .nav_inline > .nav_link:not(:last-child) { */
+	/* margin-right: 24px; */
+/* } */
+/* |||||||||||||||||||||||||||*/
+.nav_inline {
+	gap: var(--space-l);
+}
+/* .nav_vertical > .nav_link:not(:last-child) { */
+	/* margin-bottom: 12px; */
+	/* } */
+	/* |||||||||||||||||||||||||||*/
+.nav_vertical {
+	gap: var(--space-xm,var(--space-m));
+	flex-direction: column;
+}
+/* ------------------------------- */
+
+/* !###############################################   main */
+/* ------------------------------- main */
+.main {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: var(--space-xb);
+}
+.main_content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-l);
+}
+.main_image {
+	max-width: 500px;
+	height: 500px;
+	border-radius: var(--border-radius);
+}
+.main_title {
+	font-size: 36px;
+	color: var(--color-title);
+	font-weight: var(--weight-title);
+	line-height: 120%;
+	letter-spacing: -0.8px;
+}
+.main_text {
+	color: var(--color-text);
+	font-size:var(--size-d);
+	font-weight: var(--weight-text);
+	line-height: 170%;
+}
+.main_button {
+	background-color:#6C757D;
+	color: var(--color-white);
+	width: 120px;
+	border-radius: var(--border-radius-1);
+}
+/* ------------------------------- featured */
+.featured {
+	display: flex;
+	border-bottom: 1px solid var(--color-border);
+}
+.featured_card {
+	display: flex;
+	padding: 0 26px;
+	margin-bottom: var(--space-xb);
+	width: 33.3%;
+	flex-direction: column;
+	gap: var(--space-l);
+}
+.featured_image {
+	max-width: 64px;
+	height: 64px;
+	border-radius: var(--border-radius-1);
+}
+.featured_content {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-xm);
+}
+.featured_title {
+	font-size: 36px;
+	color: var(--color-title);
+	font-weight: var(--weight-title);
+	line-height: 120%;
+	letter-spacing: -0.8px;
+}
+.featured_text {
+	color: var(--color-text);
+	font-size:var(--size-d);
+	font-weight: var(--weight-text);
+	line-height: 170%;
+}
+.featured_button {
+	text-decoration: underline;
+	color: #0D6EFD;
+	padding: 0;
+}
+/* ------------------------------- blog */
+.actions {
+	/* flex-direction: column; */
+	display: flex;
+	/* flex-wrap: wrap; */
+	/* padding: var(--space-l); */
+	/* align-items: space-between; */
+	background: var(--color-primary);
+	/* justify-content: space-around; */
+	justify-content: space-between;
+	/* border-bottom: 1px solid var(--color-border); */
+	/* padding: 0 26px; */
+	/* padding: 24px 0; */
+	/* flex-direction: column; */
+	/* gap: var(--space-xb); */
+	/* border: 1px solid rgb(246, 255, 0); */
+	border-radius: calc(var(--border-radius-1) * 2);
+	/* border-radius: var(--border-radius-1); */
+}
+/* ============= */
+.actions_content {
+	padding: 24px;
+	/* border: 1px solid red; */
+	/* width: 28%; */
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* flex-direction: row; */
+	/* gap: var(--space-b); */
+	
+	/* height: 100%; */
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* justify-content: space-between; */
+	/* align-content: space-between; */
+	/* gap: var(--space-m); */
+	
+}
+/* ============= */
+.actions_title {
+	margin-bottom: var(--space-m);
+	/* align-content: space-between; */
+	/* border: 1px solid rgb(0, 238, 255); */
+	font-size: var(--size-xl, 24px);
+	font-weight: var(--weight-text);
+	color: var(--color-white);
+	/* color:red; */
+}
+/* ============= */
+/* .actions_info {
+	font-size: var(--size-d);
+	font-weight: var(--weight-text);
+	color: var(--color-white);
+	color:rgb(43, 0, 255);
+} */
+/* ============= */
+.actions_button {
+	padding: 16px 0;
+	font-size:var(--size-l);
+	color: var(--color-text);
+	color: #212529;
+	line-height: 100%;
+	background-color: var(--color-white);
+	border-radius: var(--border-radius-1);
+	font-weight: var(--weight-text);
+	width: 100%;
+	/* max-width: 240px; */
+	min-width: 240px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+/* !###############################################   Fooeter */
+/* ------------------------------- footer */
+.footer {
+	padding: var(--space-l) 0;
+	border-top: 1px solid var(--color-border);
+	display: flex;
+	justify-content: space-between;
+}
+/* ------------------------------- footer_copyright */
+.footer_copyright {
+	font-size: var(--size-s);
+	color: var(--color-text);
+	display: block;
+	/* margin-top: var(--space-m); */
+	margin-top: var(--space-l, var(--space-m));
+}
+/* ------------------------------- footer_title */
+.footer_title {
+	font-size: var(--size-l);
+	color: var(--color-title);
+	display: block;
+	margin-bottom: var(--space-m);
+	margin-bottom: var(--space-l, var(--space-m));
+	font-weight: var(--weight-title);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
