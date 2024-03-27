@@ -5,6 +5,11 @@
 				<div class="logo">
 					<span class="badge text-bg-primary"> {{brandName}} </span>
 				</div>
+				<div class="nav {{#if isVertical}}nav_vertical{{else}}nav_inline{{/if}}">
+					{{#each list}}
+						<a href="{{url}}" class="nav_link"> {{text}} </a>
+					{{/each}}
+				</div>
 				{{> nav list=links}}
 			</div>
 			<div class="header-user header__user">
