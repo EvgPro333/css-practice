@@ -1,0 +1,6 @@
+@font-face {
+	font-family: 'MADE TheArtist Script';
+	src: local('MADE TheArtist Script'), local('MADETheArtistScript'), url('../fonts/Madetheartistscript.woff2') format('woff2'), url('../fonts/Madetheartistscript.woff') format('woff'), url('../fonts/Madetheartistscript.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}

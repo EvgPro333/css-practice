@@ -143,7 +143,7 @@ margin-bottom: 80px;
 		/* flex-shrink: 5; */
 order: 2;
 }
-.flex-item:last-of-type {
+/* .flex-item:last-of-type { */
 	/* margin-right: 24px; */
 	/* margin-bottom: 24px; */
 	/* width: calc(50% - 8px); */
@@ -159,7 +159,7 @@ order: 2;
 	/* width: 120px; */
 	/* flex-grow: 3; */
 	/* margin:15px; */
-	}
+	/* } */
 	.flex-item:nth-child(2) {
 		/* margin-right: 24px; */
 		/* margin-bottom: 24px; */

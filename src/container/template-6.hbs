@@ -1,0 +1,141 @@
+{{!-- ! ########################################################################################## HEADER --}}
+	<header class="page_block">
+		<div class="header">
+			<div class="">
+				{{> logo}}
+			</div>
+			<nav class="header_nav">
+				<div class="header_nav_right">
+					{{> nav list=header}}
+				</div>
+			</nav>
+		</div>
+	</header>
+
+{{!-- ! ########################################################################################## MAIN --}}
+	<main class="main">
+
+	{{!-- ?------------------------------------------- inform--}}
+		<section class="inform">
+
+	{{!-- *------------------------------------------- info--}}
+			<div class="info">
+				<h1 class="info_title"> {{info.title}} </h1>
+				<h1 class="info_description"> {{info.description}} </h1>
+			</div>
+			
+	{{!-- *------------------------------------------- form--}}
+			{{#with form}}
+				<form class="form">
+					<div class="form_inputs_list">
+						{{#each inputs}}
+							<input class="form_inputs" type="{{type}}" placeholder="{{placeholder}}" name="name" id="form_input_{{id}}" />
+						{{/each}}
+					</div>
+					<div class="form_checkbox">
+						<input class="form_inputs" type="checkbox" name="{{checkbox.name}}" id="{{checkbox.name}}"/>
+						<div class=""></div>
+						<label for="{{checkbox.name}}"> {{checkbox.label}} </label>
+					</div>
+					<button type="submit" class="form_button"> {{button}} </button>
+					<p class="form_info"> {{info}} </p>
+				</form>
+			{{/with}}
+
+
+		</section>
+
+	{{!-- ?------------------------------------------- updates--}}
+		<section class="updates">
+			{{#with updates}}
+				<h1 class="updates_title"> {{title}} </h1>
+
+				{{!-- *------------------------------------------- list --}}
+				{{#each list}} 
+					{{> listUpdates}}
+				{{/each}}
+
+				{{!-- *------------------------------------------- show_all--}}
+				{{#with show_all}}
+					<a href="{{url}}" class="updates_link"> {{text}} </a>
+				{{/with}}
+
+			{{/with}}
+		</section>
+
+	{{!-- ?------------------------------------------- expirience --}}
+		<section class="expirience">
+			{{#with expirience}}
+				<h2 class="title"> {{title}} </h2>
+				<span class="expbadge"> {{badge}} </span>
+				<div class="">
+					{{#each list}}
+						<div class="expirience_list">
+							<strong> {{name}} </strong>
+							<p> {{details}} </p>
+						</div>
+					{{/each}}
+
+				</div>
+			{{/with}}
+
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		{{!-- {{#with messages}}
+		{{/with}} --}}
+
+	{{!-- ------------------------------------------- form--}}
+	</main>
+	
+	{{!-- ------------------------------------------- actions--}}
+	
+{{!-- ! ########################################################################################## FOOTER --}}
+<footer class="footer" id="test">
+	<div class="">
+		{{> logo}}
+		<span class="footer_copyright"> Copyright 2023-2024 </span>
+	</div>
+	{{#each footer}}
+		<div class="">
+			<span class="footer_title"> {{title}} </span>
+			{{> nav list=links isVertical=true}}
+		</div>
+	{{/each}}
+</footer>

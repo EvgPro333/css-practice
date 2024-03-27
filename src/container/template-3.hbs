@@ -1,0 +1,95 @@
+{{!-- ! ########################################################################################## HEADER --}}
+<header class="page_block">
+	<div class="header">
+		{{!-- <div class=""> --}}
+		<a href="#test" class="">
+			{{> logo}}
+		</a>
+		{{!-- </div> --}}
+		<nav class="header_nav">
+			<div class="header_nav_right">
+				{{> nav list=header}}
+			</div>
+		</nav>
+	</div>
+</header>
+
+{{!-- ! ########################################################################################## MAIN --}}
+{{!-- <main> --}}
+	{{!-- <div class="modal">
+				{{hero.text}}
+				{{hero.text}}
+				<img class="hero_image" src="{{photo}}" alt="hero_image">
+		<div class="modal_text">
+				{{hero.text}}
+				{{hero.text}}
+				{{hero.text}}
+				{{hero.text}}
+		</div>
+	</div> --}}
+	{{!-- ------------------------------------------- hero --}}
+	{{#with hero}}
+		<div class="hero_container">
+			<div class="hero">
+				<div class="hero_content">
+					<h1 class="hero_title"> {{title}} </h1>
+					<p class="hero_text"> {{text}} </p>
+				</div>
+
+				{{!-- <div class="hero_photo"> --}}
+				<div class="hero_slider">
+					<div class="hero_slider_icon hero_slider_left"> {{left}} </div>
+					<img class="hero_image" src="{{photo}}" alt="hero_image">
+					<div class="hero_slider_icon hero_slider_right"> {{right}} </div>
+				</div>
+				{{!-- </div> --}}
+			</div>
+		</div>
+	{{/with}}
+	{{!-- ------------------------------------------- blog--}}
+	{{!-- <input type="text" class="input"> --}}
+		{{!-- <div class="modal"> --}}
+					{{!-- {{hero.text}} --}}
+			{{!-- <img class="modal_image" src="{{hero.photo}}" alt="hero_image"> --}}
+			{{!-- <div class="modal_text"> --}}
+					{{!-- {{hero.text}} --}}
+					{{!-- {{hero.text}} --}}
+					{{!-- {{hero.text}} --}}
+			{{!-- </div> --}}
+		{{!-- </div> --}}
+	<main class="blog">
+		{{#each blog}}
+			{{> cardBlog data=this}}
+
+		{{/each}}
+	</main>
+	{{!-- ------------------------------------------- form--}}
+	<div class="form">
+		{{#with form}}
+		<div class="form_content">
+			<h3 class="form_title"> {{title}} </h3>
+			<p class="form_info"> {{info}}<span class="ex">x</span>	 </p>
+		</div>
+		<div class="form_action">
+			<a class="button form_button" href="{{href}}">
+				{{button}}
+			</a>
+		</div>
+		{{/with}}
+	</div>
+{{!-- </main> --}}
+{{!-- ! ########################################################################################## FOOTER --}}
+<footer class="footer" id="test">
+	<div class="">
+		{{> logo}}
+		<span class="footer_copyright"> Copyright 2023-2024 </span>
+	</div>
+	{{#each footer}}
+		<div class="">
+			<span class="footer_title"> {{title}} </span>
+			{{> nav list=links isVertical=true}}
+		</div>
+	{{/each}}
+</footer>
+	<div class="test">test</div>
+
