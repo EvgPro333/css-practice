@@ -1,4 +1,4 @@
-
+@layer normolize {
 
 /* Document
    ========================================================================== */
@@ -937,4 +937,9 @@ input[type='number'] {
 input:-webkit-autofill {
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+/* перебиваємо всі стилі з інших файлів потім може бути багато багів*/
+/* h1, p { */
+	/* margin: 0 !important; */
+/* } */
 }

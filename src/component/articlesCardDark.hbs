@@ -1,0 +1,11 @@
+{{#each articles}}
+	<div class="card" id="{{id}}">
+		<div class="card__image">
+			<img class="card__image--photo" src="{{photo}}" alt="photo">
+			<span class="{{#if isNew}}new{{/if}}">{{#if isNew}}New{{/if}}</span>
+		</div>
+		<h2 class="card__title"> {{name}} </h2>
+		<p class="card__text"> {{description}} </p>
+		<a class="button card__button" href="{{href}}"> Read All </a>
+	</div>
+{{/each}}
