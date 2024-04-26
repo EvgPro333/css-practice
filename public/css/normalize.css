@@ -1,11 +1,16 @@
-
+@layer {
+	/* {{!-- ↙ підключаємо обнулення css властивостей браузерів в (!DOCTYPE html | html | head |... )  --}} */
+	/* <link href='css/normalize.css' rel='stylesheet' /> */
 
 /* Document
+	Документ
    ========================================================================== */
 
 /**
- * 1. Correct the line height in all browsers.
+ * 1. Correct the line height in all browsers. 
+		Исправьте высоту строки во всех браузерах.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
+		Запретить изменение размера шрифта после изменения ориентации в iOS.
  */
 
 html {
@@ -937,6 +942,7 @@ input[type='number'] {
 input:-webkit-autofill {
   -webkit-box-shadow: none;
   box-shadow: none;
+}
 }
 /* перебиваємо всі стилі з інших файлів потім може бути багато багів*/
 /* h1, p { */
