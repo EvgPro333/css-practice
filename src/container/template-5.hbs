@@ -16,16 +16,14 @@
 	{{!-- ------------------------------------------- massages --}}
 	<main class="main">
 		{{#with messages}}
-			<div class="massages">
-				<h1 class="massages_title"> {{title}} </h1>
+			<div class="messages">
+				<h1 class="messages_title"> {{title}} </h1>
 				{{#each list}}
-					{{!-- <ul> --}}
 						<div class="msg">
 							<strong class="msg_name"> {{name}} </strong>
 							<p class="msg_text"> {{message}} </p>
 							<span class="msg_day"> {{day}} </span>
 						</div>
-					{{!-- </ul> --}}
 				{{/each}}
 				<a href="#" class="messages_link"> All messages </a>
 
@@ -50,6 +48,16 @@
 				<p class="form_info"> {{info}} </p>
 			</form>
 		{{/with}}
+	{{!-- ------------------------------------------- actions--}}
+		{{!-- <div class="advantages"> --}}
+			{{#each advantages}}
+				<div class="advan">
+					<strong> {{title}} </strong>
+					<p> {{text}} </p>
+				</div>
+			{{/each}}
+
+		{{!-- </div> --}}
 	</main>
 	
 	{{!-- ------------------------------------------- actions--}}
