@@ -1023,7 +1023,7 @@ router.get('/template-6', function (req, res) {
     ],
   })
 })
-
+      
 // ================================================ template-7
 router.get('/template-7', function (req, res) {
   res.render('template-7', {
@@ -1124,7 +1124,18 @@ router.get('/template-7', function (req, res) {
           name: 'Refund Policy',
         },
       ],
+
     },
+  })
+})
+// ================================================ slack
+router.get('/slack', function (req, res) {
+  res.render('slack', {
+    //  layout: 'slack',
+    layout: null,
+    page: {
+      title: 'slack',
+      },
   })
 })
 
