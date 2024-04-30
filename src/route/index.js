@@ -962,6 +962,17 @@ router.get('/template-6', function (req, res) {
   })
 })
 
+// ================================================ template-7
+router.get('/slack', function (req, res) {
+  res.render('slack', {
+    //  layout: 'slack',
+    layout: null,
+    page: {
+      title: 'slack',
+    },
+  })
+})
+
 // =====================================
 
 module.exports = router

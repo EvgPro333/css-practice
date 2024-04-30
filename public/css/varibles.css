@@ -1,0 +1,51 @@
+:root {
+	/* ---------- кольори */
+	--color-white: #ffffff;
+	--color-light: #f4ede4;
+	--color-black: #000;
+	--color-primary: #611f69;
+
+	/* ---------- розміри екрану */
+	--page-width-big: 1260px;
+	--page-width-medium: 1000px;
+	--page-width-small: 700px;
+	
+	/* ---------- відступи */
+	--spacing-1: 8px;
+	--spacing-2: 12px;
+	--spacing-3: 16px;
+	--spacing-4: 20px;
+	--spacing-5: 24px;
+	--spacing-6: 28px;
+	--spacing-7: 32px;
+	--spacing-8: 36px;
+	--spacing-9: 40px;
+	--spacing-10: 44px;
+	
+	/* ---------- розміри тексту */
+	--size-1: 14px;
+	--size-2: 18px;
+	--size-3: 22px;
+	--size-4: 26px;
+	--size-5: 30px;
+	--size-6: 34px;
+
+	/* ---------- висота рядка тексту */
+	--line-height-1: 1.5em;
+	
+	/* ---------- радіуси */
+	--radius-1: 4px;
+	--radius-2: 4px;
+	--radius-3: 4px;
+	--radius-4: 4px;
+	
+	/* ---------- прозорість */
+	--opacity-1: 0.7;
+	--opacity-1: 0.3;
+	
+	/* ---------- час анімації */
+	--transition-1: 0.7s;
+	
+
+
+}
